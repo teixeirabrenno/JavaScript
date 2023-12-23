@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de clique</title>
+    <style>
+        #main{
+         display: grid;
+         place-items: center;
+         height: 100vh;
+            
+           
+        }
+           
+        #box{
+            background-image: linear-gradient(rgb(243, 209, 243), rgb(238, 57, 238));
+            width: 30%;
+            height: 30vh
+            
+
+        }
+        #text{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30vh;
+            
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="box">
+            <div id="text">
+                <p>Interaja...</p>
+            </div>
+        </div>
+    </div>  
+
+    <script>
+
+       var a = document.getElementById('text')
+       a.addEventListener('click', clicou)
+       a.addEventListener('mouseenter', entrou)
+       a.addEventListener('mouseout', saiu)
+
+       function clicou(){
+        a.innerText = "Clicou!"
+        a.style.background = "Red"
+       }
+       function entrou(){
+        a.innerText = 'Entrou'
+        a.style.background = 'green'
+       }
+       function saiu(){
+        a.innerText = 'Saiu'
+        a.style.background = 'purple'
+       }
+
+    </script>
+</body>
+</html>

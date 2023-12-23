@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="desafio02-res.css">
+</head>
+
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>Ano de nascimento: <input type="number" name="year" id="year" min="0"></p>
+            <p>Sexo: 
+                <input type="radio" name="sex" id="checkboxMASC" checked>
+                <label for="checkboxMASC">Masculino</label>
+                <input type="radio" name="sex" id="checkboxFEM">
+                <label for="checkboxFEM">Feminino</label>
+            </p>
+            <p><input type="button" value="Verificar" onclick="verificar()"></p>
+                
+        </div>
+        <div id="txtimg">
+            Preencha os dados acima para ver o resultado.
+            <img src="" alt="" id="foto">
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CursoEmVídeo</p>
+    </footer>
+
+
+
+
+
+
+
+    <script src="desafio02-res.js"></script>
+</body>
+</html>

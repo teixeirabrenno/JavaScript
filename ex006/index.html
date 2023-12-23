@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+<body>
+    
+    <p>Em qual país você nasceu?</p>
+    <input type="text" id="origem"> <input type="button" value="Confirmar" id="conf" onclick="clicar()">
+    <hr>
+    <div id="res">
+        
+    </div>
+ 
+    <script>
+        
+            function clicar(){
+                var pais = document.getElementById('origem')
+                var res = document.getElementById('res')
+                var paisformatado = pais.value.charAt(0).toUpperCase()+ pais.value.slice(1)
+            
+                if (pais.value == 'Brasil' || pais.value == 'brasil'){
+                res.innerHTML = `Como você nasceu em ${paisformatado}, você é brasileiro!`
+                } else {
+                res.innerHTML = `Como você nasceu em ${paisformatado}, você é estrangeiro.`
+                }
+            }
+            
+        
+
+    </script>
+    
+</body>
+</html>

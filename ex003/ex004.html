@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando números</title>
+    <style>
+      
+      input{
+         width: 10%;
+      }
+
+    </style>
+</head>
+<body>
+    <p>Operações com números</p>
+   <input type="number" id="txt1">
+   <input type="number" id="txt2">
+   <input type="button" value="Confirmar" onclick="clicar()">
+   <hr>
+   <div id="resultado">Resultado</div>
+
+  
+
+   <script>
+   
+
+    function clicar(){
+        var a = document.querySelector('input#txt1')
+        var b = document.querySelector('input#txt2')
+        var resultado = document.getElementById('resultado')
+        var n1 = Number(a.value)
+        var n2 = Number(b.value)
+        var soma = n1 + n2
+        resultado.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${soma}`
+    }
+    
+    
+
+   </script>
+    
+
+    
+</body>
+</html>

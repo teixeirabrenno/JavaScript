@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos java script</title>
+</head>
+<body>
+    <script>
+       
+        window.alert("#") //Abre um alerta na tela//
+        window.confirm("#") //Abre uma tela de Ok + cancelar na tela //
+        window.prompt("Qual o seu nome?") //Abre um prompt de texto//
+        
+    //Conversão de string para números//
+        Number() // Converte para número
+        Number.parseInt() // Converte para número inteiro
+        Number.parseFloat() // Converte para número real
+
+    //Conversão de número para string//
+       String()
+       "#".toString()    
+
+    //Formatações referentes a strings//
+    var nome = window.prompt("Qual o seu nome?")
+    document.write(`Seu nome é ${nome} e ele possui ${nome.length} letras</br>`) // document.write faz com o que o texto apareça no body
+    document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}</br>`)// Escreve o nome em lower case e quebra a linha
+    document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}</br>`)//Escreve o nome em upper case e quebra a linha
+
+    //Modificar o número de casas decimais de um número
+    var n1 = 17.6
+    n1.toFixed(4) // transforma n1 em decimal com 4 casas
+
+    //Modificar número para formatação de salário
+
+    var n1 = 17.6
+    n1.toLocaleString("pt-BR",{style: "currency", currency: "BRL"})
+
+    //Incrementos
+    var n = 5
+    [n = n + 1] = [n += 1] = [n++]
+
+    //Operadores lógicos
+
+    ! - Negação 
+    && - Conjunção(e)
+    || - Disjunção(ou)
+
+    Ordem de precedência ->  !, &&, ||
+
+    //Como capturar outros elementos
+
+    window.document.getElementById('Id name') 
+    window.document.getElementsByClassName('Class name')[#]
+    window.document.getElementsByName('Name name')[#]
+    window.document.getElementsByTagName("Tag name")[#]
+    //ou//
+    window.document.querySelector('elementtype+selector+name')
+    //ex//
+    window.document.querySelector('div#divname')
+    window.document.querySelector('class.classname')
+        
+    // Como capturar data atual
+
+    let dataAtual = new Date()
+    let horaAtual = dataAtual.getDay()
+
+    //CONDIÇÕES// 
+    
+    //Modelo Switch
+    switch(horaAtual) {
+        case 1:
+            console.log('Mensagem1')
+            break
+        case 2:
+            console.log('Mensagem2')
+            break
+        case 3:
+            console.log('Mensagem3')
+            break
+        default:
+            console.log('Mensagem4')
+            break
+    }
+
+    //Vetores
+    
+    const valores = [10, 12, 20, 5, 99] // Cria vetor
+    const nomes = ['Pedro', 'Márcio', 'Gabrielle', 'Fernanda', 'Brenno'] // Cria vetor
+    vetor.push(n) // Colocar o valor n como último elemento do vetor
+    vetor.length // Quantidade de elementos do vetor
+    vetor.sort() // Organiza em ordem alfabética
+    valores.sort(function(a,b){return a-b}) // Organiza em ordem crescente
+    valores.sort(function(a,b){return b-a}) // Organiza em ordem decrescente
+    valores.indexOf(12) // Retorna o índice do elemento 12 no vetor. Nesse caso, 1
+    valores.indexOf(100) // Não existe o valor 100 no meu vetor, logo, ele retornará -1
+    
+
+    for(let i = 0; i < valores.length; i++){   // Percorre todos os elementos do vetor e executa uma função
+        console.log(valores[4])                // Nesse exemplo, ele mostra o valor do índice 4 do vetor
+        return                
+    }
+
+    for(let i in valores){                     // Esse código faz a mesma coisa que o de cima
+        console.log(valores[4])
+        return
+    }
+
+
+   
+
+    
+
+        
+
+
+    </script>
+    
+</body>
+</html>
