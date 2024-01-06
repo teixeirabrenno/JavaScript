@@ -1,0 +1,47 @@
+#box {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+#labelBox {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-evenly;
+    width: 100px;
+    width: 200px;
+}
+
+label{
+    margin: 10px;
+}
+
+button{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.329);
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+
+}
+
+button:active{
+    transform: rotate(360deg);
+    transition: transform 0.1s;
+
+
+}
+
+.myLabels { 
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+   
+}
+
+

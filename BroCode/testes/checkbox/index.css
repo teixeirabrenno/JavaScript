@@ -1,0 +1,23 @@
+body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+input, label {
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+
+
+#verifyInput {
+    padding: 5px;
+    margin-top: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.397);
+    box-sizing: border-box;
+}
+

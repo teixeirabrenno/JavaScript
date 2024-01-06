@@ -19,17 +19,106 @@
 
     //Conversão de número para string//
        String()
-       "#".toString()    
+       "#".toString()      
 
-    //Formatações referentes a strings//
-    var nome = window.prompt("Qual o seu nome?")
-    document.write(`Seu nome é ${nome} e ele possui ${nome.length} letras</br>`) // document.write faz com o que o texto apareça no body
-    document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}</br>`)// Escreve o nome em lower case e quebra a linha
-    document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}</br>`)//Escreve o nome em upper case e quebra a linha
 
+
+    //STRING RELATED FORMATIING//
+    
+    let nome = 'Brenno'
+        
+
+    nome.charAt(0) // selects the letter referring to the index 0 of the string // B
+    nome.toUpperCase() // puts every letter in upper case // BRENNO
+    nome.toLowerCase() // puts every letter in lower case // brenno
+    nome.indexOf('n') // displays the index of the first occurence of the letter 'n' // 3
+    nome.lastIndexOf('n') // displays the index of the last occurence of the letter 'n' // 4
+    nome.length // gets the number of characters of the string // 6
+    nome.trim() // gets rid of any blank spots before and/or after the string
+    nome.repeat(n) // repeat the string 'n' times
+    nome.startsWith('#') // check if the string starts with '#'...returns a boolean value // TUTORIAL BELOW
+    nome.endsWith('#') // check if the string starts with '#'...returns a boolean value // TUTORIAL BELOW
+    nome.includes('#') // check if the string includes a specific character '#' // TUTORIAL BELOW
+    nome.replaceAll('#', '$') // replace all characters # for characters $
+    nome.padStart(10, '0') // set the string to be 10 characters long...if what you type is less than 10 characters long, it will fill the rest of the space with zeros
+    nome.padEnd(10, '0') // same as the above, but in the end instead
+
+
+
+    
+
+    ////////////////////////////example for nome.startsWith('#') or nome.endsWith('#')///////////////////////////
+    let username = 'Brenno'
+
+    let result = username.startsWith(' ') // starts with blank space
+
+    if(result){
+        console.log('Your username cannot start with a blank space')
+    } else {
+        console.log(`Your username is ${username}`)
+    }
+
+
+
+    ///////////////////////////////////example for nome.includes('#') //////////////////////////////////////////
+
+    let username = Rasta Zen
+
+    let result = username.includes(' ')
+
+    if (result){
+        console.log('Your username cannot contain blank spaces')
+    } else {
+        console.log(`Your username is ${username}`)
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // NÚMEROS NÚMEROS NÚMEROS NÚMEROS NÚMEROS NÚMEROS NÚMEROS 
     //Modificar o número de casas decimais de um número
-    var n1 = 17.6
-    n1.toFixed(4) // transforma n1 em decimal com 4 casas
+    let n1 = 2.3
+    let n2 = 3.5
+    let n3 = 45
+    n1.toFixed(4) // transforma n1 em decimal com 4 casas // 2.300
+    z = Math.round(n1) // arredonda o número para o inteiro mais próximo // 2
+    z = Math.floor(n1) // arrendonda para o menor inteiro mais próximo // 2
+    z = Math.ceil(n1) // arredonda para o maior inteiro mais próximo // 3
+    z = Math.trunc(n1) // elimina todas as casas decimais // 2
+    z = Math.pow(n1, n2) // resulta em n1 elevado a n2 // 18,45
+    z = Math.sqrt(n1) // resulta na raiz de n1 // sqrt(2.3)
+    z = Math.log(n1) // resulta no log de 2.3
+
+        // É NECESSÁRIO COLOCAR O VALOR EM RADIANOS
+        z = Math.sin(n3) // resulta em seno de 45º
+        z = Math.cos(n3) // resulta no cosseno de 45º
+        z = Math.tan(n3) // resulta na tangente de 45º
+
+    z = Math.abs(n1) // resulta no módulo do número //     
+    z = Math.sign(n1) // determina o sinal do número (positivo ou negativo)
+
+    let max = Math.max(n1, n2, n3) // mostra o valor mais alto dentre os selecionados
+    let min = Math.min(n1, n2, n3) // mostra o menor valor dentre os selecionados
+
 
     //Modificar número para formatação de salário
 
@@ -48,6 +137,26 @@
 
     Ordem de precedência ->  !, &&, ||
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     //Como capturar outros elementos
 
     window.document.getElementById('Id name') 
@@ -65,25 +174,93 @@
     let dataAtual = new Date()
     let horaAtual = dataAtual.getDay()
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     //CONDIÇÕES// 
     
     //Modelo Switch
-    switch(horaAtual) {
+
+    let month = 1
+
+    switch(month) {
         case 1:
-            console.log('Mensagem1')
+            console.log('January') //In this case, month equals 1, so it will show the case 1
             break
         case 2:
-            console.log('Mensagem2')
+            console.log('February')
             break
         case 3:
-            console.log('Mensagem3')
+            console.log('March')
             break
         default:
-            console.log('Mensagem4')
+            console.log('DefaultMessage')
             break
     }
 
-    //Vetores
+
+    //////////////////////////////////////////// outro exemplo //////////////////////////////////////////////////
+
+
+    let testScore = 78
+    
+    switch(true) {
+        case testScore >= 70:
+            console.log('Aprovado')
+            break
+
+        case testScore <= 69:
+            console.log('Reprovado')
+            break      
+    }
+
+
+
+    //Operador ternário
+    
+    let age = 9
+    let message = age < 18 ? 'You cannot drink' : 'You can drink'
+    console.log(message) // In this case, as the age is set to 9 and it is, in fact, less than 18, it will display the 'You cannot drink' option 
+
+    //It is the same thing as writing the code like this: 
+
+    let age = 9
+    if (age < 18){
+        console.log('You cannot drink')
+    } else {
+        console.log('You can drink')
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    //VETORES
     
     const valores = [10, 12, 20, 5, 99] // Cria vetor
     const nomes = ['Pedro', 'Márcio', 'Gabrielle', 'Fernanda', 'Brenno'] // Cria vetor
