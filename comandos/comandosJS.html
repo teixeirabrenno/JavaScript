@@ -76,6 +76,23 @@
 
 
 
+    // String slicing
+
+    let email = 'teixeirabrenno@gmail.com'
+
+    let username = email.slice(0, email.indexOf('@')) // username will start at 0 and end at the index of '@'
+    let extension = email.slice(email.indexOf('@')) // extension will start at '@' and go until the end of the string
+
+    ////Method chaining//////
+
+    let username = '  bREnNo   '
+
+    // If I wanted to turn the first letter to UpperCase, the rest of the letters to LowerCase and get rid of any blank spaces before or after the string, I could write it like that
+
+    username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase()
+
+    
+
 
 
 
@@ -284,6 +301,19 @@
     }
 
 
+
+    // REST PARAMETER
+
+    (...rest) // blundles a bunch of elements into an array
+    (...spread) // expands an array into different elements
+
+    EXAMPLE:
+
+    function combineStrings(...strings){
+        return strings.join(' ')
+    }
+
+    const fullname = combineStrings('Brenno', 'Belarmino', 'Teixeira')
    
 
     

@@ -1,0 +1,68 @@
+body{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(211, 211, 211, 0.39);
+}
+
+
+
+
+main {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: white;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.568);
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    height: 440px;
+    width: 330px;
+}
+
+h1{
+    color: rgb(88, 88, 247);
+
+}
+
+
+input{
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+.radioInput{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#inputNum {
+    height: 50px;
+    width: 190px;
+    text-align: center;
+    font-size: 1.5em;
+    
+}
+
+#submitBtn {
+    margin-top: 20px;
+    height: 40px;
+    width: 80px;
+    background: rgb(240, 26, 26);
+    color: white;
+}
+
+#submitBtn:hover {
+    background: rgb(255, 0, 0);
+}
+
+#result {
+    font-size: 2em;
+    font-weight: bold;
+    
+}
